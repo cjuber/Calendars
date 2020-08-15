@@ -1,6 +1,6 @@
 import React from 'react';
 import  './components/Calendar'
-import Calendar from './components/Calendar';
+import './css/styles.css'
 import Header from './components/Header'
 import Nav from './components/Nav'
 import routes from './routes/routes'

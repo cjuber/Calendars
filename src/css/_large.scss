@@ -1,0 +1,176 @@
+//Header and Nav ------------------------
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+header{
+    background: #50505A;
+    height: 10vh;
+    h1{
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 2vh;
+        color: #B4B4BE;
+    }
+    text-align: center;
+    border-bottom: 2px solid #B4B4BE;
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    border-right: 1px solid #B4B4BE;
+    border-left: 1px solid #B4B4BE;
+    font-size: 25px
+}
+.nav{
+    display: flex;
+    //padding: 2px 0 2px 2%;
+    border-bottom: 3px solid #B4B4BE;
+    font-family: 'Roboto', sans-serif;
+    background: #50505A;
+    h1{
+        color: #B4B4BE;
+    }
+}
+
+// end Header and Nav -----------------------------------------------------------------------------------------------------------------------------------------
+
+// cal1 ---------------------------------------
+.cal1{
+    display: flex;
+    justify-content: center;
+
+
+.calendar-container {
+    border: 2px solid skyblue;
+    width: 500px;
+    height: 350px;
+    text-decoration: none;
+    margin-top: 10em;
+}
+
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.calendar-header {
+    
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 480px;
+    border-bottom: 1px solid skyblue;
+    
+}
+.displayMonth{
+    margin-left: 20px;
+    
+}
+.nav-month {
+  
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px; 
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.prev {
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.next {
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-color: none;
+}
+
+.month-popup div {
+    padding: 0.3em;
+    text-decoration: none;
+    
+}
+
+
+
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.label-month,
+.label-year {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.label-month {
+    cursor: pointer;
+}
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 20px;
+}
+
+.week-day {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.day {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+.selected-day {
+    background-color:yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+}
+// End cal1 -----------------------------------------------------------------------------------------------------------------------------------------

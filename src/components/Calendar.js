@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import moment from 'moment'
-import './calendar.css';
+
 
 export default class Calendar extends Component {
     constructor() {
@@ -223,25 +223,26 @@ export default class Calendar extends Component {
         })
         return (
             <div className="calendar-container" style={this.style}>
-                <table className="calendar">
-                    <thead>
-                        <tr className="calendar-header">
-                            <td colSpan="5">
+                <thead>
+                        <div className="calendar-header">
+                            <div className='displayMonth'>
                                 <this.MonthNav />
                                 {" "}
                                 <this.YearNav />
-                            </td>
-                            <td colSpan="2" className="nav-month">
-                                <i className="prev fa fa-fw fa-chevron-left"
+                            </div>
+                            <div className="nav-month">
+                                <i className="prev"
                                     onClick={(e)=> {this.prevMonth()}}>{'< '}
                                 </i>
-                                <i className="prev fa fa-fw fa-chevron-right"
+                                <i className="next"
                                     onClick={(e)=> {this.nextMonth()}}>{' >'}
                                 </i>
 
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     </thead>
+                <table className="calendar">
+                    
                     <tbody>
                         <tr>
                             {weekdays}
