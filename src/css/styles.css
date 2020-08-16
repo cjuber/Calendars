@@ -145,7 +145,6 @@ input, select {
     border: 2px solid skyblue;
     width: 500px;
     height: 350px;
-    text-decoration: none;
     margin-top: 10em;
   }
   .cal1 .calendar {
@@ -197,15 +196,9 @@ input, select {
     padding: 5px;
     background: white;
     border: 2px solid skyblue;
-    text-decoration: none;
-    -webkit-text-decoration-style: none;
-            text-decoration-style: none;
-    -webkit-text-decoration-color: none;
-            text-decoration-color: none;
   }
   .cal1 .month-popup div {
     padding: 0.3em;
-    text-decoration: none;
   }
   .cal1 .editor-year {
     max-width: 3.6em;
@@ -223,8 +216,6 @@ input, select {
   .cal1 .week-day {
     text-align: center;
     height: 20px;
-  }
-  .cal1 .week-day {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
   }
@@ -232,8 +223,6 @@ input, select {
     font-size: 20px;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
-  }
-  .cal1 .day {
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -254,6 +243,129 @@ input, select {
     line-height: 28px;
     border-radius: 2%;
     color: black;
+  }
+  .cal2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #8471b2;
+    height: 85.8vh;
+  }
+  .cal2 .calendar-container {
+    background: #29323f;
+    width: 370px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 10em;
+    -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+  }
+  .cal2 .calendar {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cal2 .calendar-header {
+    font-size: 1.6em;
+    font-family: 'Dosis', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    width: 320px;
+    background: #29323f;
+    color: #8471b2;
+    border-radius: 25px;
+  }
+  .cal2 .displayMonth {
+    margin-left: 20px;
+  }
+  .cal2 .nav-month {
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 20px;
+  }
+  .cal2 a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: #8471b2;
+  }
+  .cal2 .prev {
+    cursor: pointer;
+    padding: 5px;
+  }
+  .cal2 .next {
+    cursor: pointer;
+    padding: 5px;
+  }
+  .cal2 .month-popup {
+    position: absolute;
+    padding: 5px;
+    background: #29323f;
+    -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  .cal2 .month-popup div {
+    padding: 0.3em;
+  }
+  .cal2 .editor-year {
+    max-width: 3.6em;
+  }
+  .cal2 .label-month,
+  .cal2 .label-year {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+  }
+  .cal2 .label-month {
+    cursor: pointer;
+  }
+  .cal2 .day,
+  .cal2 .empty-slot,
+  .cal2 .week-day {
+    text-align: center;
+    height: 20px;
+  }
+  .cal2 .week-day {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: #999;
+  }
+  .cal2 .day {
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    width: 25px;
+    height: 40px;
+    line-height: 40px;
+    color: #c0b7b7;
+  }
+  .cal2 .day:hover {
+    background-color: #8471b2;
+    border-radius: 0px;
+    color: #c0b7b7;
+  }
+  .cal2 .current-day {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #e6dc83;
+  }
+  .cal2 .selected-day {
+    background-color: #8471b2;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
